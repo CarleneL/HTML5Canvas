@@ -1,0 +1,74 @@
+.search_fields{
+	margin-top: 20px;
+	line-height: 1;
+	text-align: center;
+}
+
+.glyphicon {
+	color: white;
+}
+
+.btn {
+	height:25px;
+}
+
+#autocompete{
+	height:25px;
+}
+
+body{
+	background-color: #87959D;
+}
+
+#weather_canvas {
+	border: 2px solid #99ADC8; 
+	border-radius: 25px;
+	margin-left: 185px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.switch{
+	margin-bottom: 0px;
+}
+
+.cmn-toggle{
+	margin-right: 20px; 
+	display: none
+}
+
+input.cmn-toggle-yes-no + label {
+	margin-left: 1100px;
+}
+input.cmn-toggle-yes-no + label:before,
+input.cmn-toggle-yes-no + label:after {
+	height: 30px;
+	margin-top: 55px;
+  display: block;
+  position: absolute;
+  width: 50px;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size:20px;
+  text-align: center;
+  line-height: 30px;
+}
+input.cmn-toggle-yes-no + label:before {
+  background-color: #dddddd;
+  content: attr(data-off);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no + label:after {
+  background-color: #99ADC8;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no:checked + label:before {
+  transform: rotateY(180deg);
+}
+input.cmn-toggle-yes-no:checked + label:after {
+  transform: rotateY(0);
+}
